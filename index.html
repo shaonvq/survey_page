@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>survey</title>
+    <link rel="stylesheet" href="node_modules/normalize.css/normalize.css">
+    <link rel="stylesheet" href="master.css">
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</head>
+<body>
+    <header>
+        <h1 id="title">HOTS Survey</h1>
+        <p id="description">Let us know what kind of hots player you are.</p>
+    </header>
+    <main>
+        <form action="" id="survey-form">
+            <label id="name-label" for="name">username: <input type="text" placeholder="username" name="name" required id="name"></label>
+                
+
+            <br>
+            <label id="email-label" for="email">email:<input type="email" placeholder="email" name="email" required id="email"></label>
+            
+            <br>
+            <label id="number-label" for="number">level:<input type="number" placeholder="number" name="number" min="0" max="10" id="number"></label>
+                
+            <br>
+            <label for="dropdown">favorite class: <select name="dropdown" id="dropdown">
+                <option value="warrior">warrior</option>
+                <option value="healer">healer</option>
+                <option value="assassin">assassin</option>
+                <option value="specialist">specialist</option>
+            </select></label>
+            
+            <br>
+            <span> PVP: <input type="radio" name="rank" value="red"></span>
+            <span> PVE: <input type="radio" name="rank" value="blue"></span>
+            <br>
+            <span>hotslog: <input type="checkbox" name="checkbox1" value="1"></span>
+            <br>
+            <span>reddit: <input type="checkbox" name="checkbox2" value="2"></span>
+            <br>
+            <span>hots counters: <input type="checkbox" name="checkbox3" value="3"></span>
+            <br>
+            <textarea name="comments" id="" cols="30" placeholder="other comments" rows="10"></textarea>
+            <br>
+            <button type="submit" id="submit" >submit</button>
+        </form>
+    </main>
+</body>
+</html>
