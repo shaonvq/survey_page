@@ -17,15 +17,16 @@
         </header>
         <main>
             <form action="" id="survey-form">
-                 username:
+                 
                 <label id="name-label" for="name">
+                    username:
                     <input type="text" placeholder="username" name="name" required id="name">
                 </label>
                 <label id="email-label" for="email">email:
                     <input type="email" placeholder="email" name="email" required id="email">
                 </label>
                 <label id="number-label" for="number">level:
-                    <input type="number" placeholder="number" name="number" min="0" max="10" id="number">
+                    <input type="number" placeholder="0" name="number" min="0" max="10" id="number">
                 </label>
                 <label for="dropdown">favorite class:
                     <select name="dropdown" id="dropdown">
@@ -35,23 +36,45 @@
                         <option value="specialist">specialist</option>
                     </select>
                 </label>
-                <span> PVP:
-                    <input type="radio" name="rank" value="red">
-                </span>
-                <span> PVE:
-                    <input type="radio" name="rank" value="blue">
-                </span>
-                <span>hotslog:
-                    <input type="checkbox" name="checkbox1" value="1">
-                </span>
-                
-                <div id="cb2c">
-                    <input id="cb2" type="checkbox" name="checkbox2" value="1">
-                    <label for="cb2"></label>
+                <div class="radiocontainer">
+                    <div class="subcontainer">
+                        <span>PVP:</span>
+                        <div class="cbc">
+                            <input id="r1" type="radio" name="level" value="pvp">
+                            <label for="r1"></label>
+                        </div>
+                    </div>
+                    <div class="subcontainer">
+                        <span>PVE:</span>
+                        <div class="cbc">
+                            <input id="r2" type="radio" name="level" value="pve">
+                            <label for="r2"></label>
+                        </div>
+                    </div>
                 </div>
-                <span>hots counters:
-                    <input type="checkbox" name="checkbox3" value="3">
-                </span>
+                
+                <div class="subcontainer">
+                    <span>hots counters:</span>
+                    <div class="cbc">
+                        <input id="cb1" type="checkbox" name="checkbox1" value="1">
+                        <label for="cb1"></label>
+                    </div>
+                </div>
+                <div class="subcontainer">
+                    <span>hotslog:</span>
+                    <div class="cbc">
+                        <input id="cb2" type="checkbox" name="checkbox2" value="2">
+                        <label for="cb2"></label>
+                    </div>
+                </div>
+                <div class="subcontainer">
+                    <span>hots counters:</span>
+                    <div class="cbc">
+                        <input id="cb3" type="checkbox" name="checkbox3" value="3">
+                        <label for="cb3"></label>
+                    </div>
+                </div>
+                
                 <textarea name="comments" id="" cols="30" placeholder="other comments" rows="10"></textarea>
                 <button type="submit" id="submit">submit</button>
             </form>
