@@ -139,7 +139,7 @@ input[type="checkbox"]:focus{
     padding-left: 10px;
 }
 
-button{
+button, select{
     color: #BEBEBE;
     background-color: #414141;
     padding: 10px 15px;
