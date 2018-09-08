@@ -3,6 +3,7 @@
     padding: 0;
     font-family: sans-serif;
     font-size: 18px;
+    outline:none;
     box-sizing: border-box;
 }
 
@@ -139,13 +140,14 @@ input[type="checkbox"]:focus{
     padding-left: 10px;
 }
 
-button, select{
+button, sl{
     color: #BEBEBE;
     background-color: #414141;
     padding: 10px 15px;
     border-radius: 5px;
     border: 1px solid #525252;
 }
+
 
 
 input{
@@ -158,6 +160,7 @@ input[type=email], input[type=text], input[type=number], select{
     border-radius: 5px;
     border: 1px solid #525252;
 }
+
 
 input[type=number]{
     width: 70px;
@@ -512,4 +515,10 @@ template {
 
 [hidden] {
   display: none;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
 }
