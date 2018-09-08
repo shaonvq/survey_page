@@ -135,10 +135,16 @@ input[type="checkbox"]:focus{
 }
 
 button{
+    color: #BEBEBE;
     background-color: #414141;
     padding: 10px 15px;
     border-radius: 5px;
     border: 1px solid #525252;
+}
+
+
+input{
+  color: #BEBEBE;
 }
 
 input[type=email], input[type=text], input[type=number], select{
@@ -153,6 +159,7 @@ input[type=number]{
 }
 
 textarea{
+    color: #BEBEBE;
      background-color: #414141;
     padding: 10px 15px;
     border-radius: 5px;
